@@ -15,18 +15,22 @@ Rodar o server:
 Rotas de categoria:
 
 Retornar todas as categorias:
+
     (get) localhost:3000/category
 
 Retornar uma categoria especifica:
+
     (get) localhost:3000/category/{id}
 
 Criar uma categoria:
+
     (post) localhost:3000/category
     body: {
         "name": "Categoria1", // optional
     }
 
 Alterar (tudo ou parte) de uma categoria especifica:  
+
     (patch) localhost:3000/category/{id}
     body: {
         "name": "Categoria1", // optional
