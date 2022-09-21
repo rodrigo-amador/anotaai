@@ -40,12 +40,15 @@ Alterar (tudo ou parte) de uma categoria especifica:
 Rotas de produto:
 
 Retornar todos os produtos:
+
     (get) localhost:3000/product
 
 Retornar um produto especifico:
+
     (get) localhost:3000/product/{id}
 
 Retornar uma listagem de produto por filtro:
+
     (post) localhost:3000/product/filter
     body: {
         "title": "Pro", // optional
@@ -53,6 +56,7 @@ Retornar uma listagem de produto por filtro:
     }
 
 Criar um produto:
+
     (post) localhost:3000/product
     body: {
         "title": "Produto6",
@@ -62,6 +66,7 @@ Criar um produto:
     }
 
 Alterar (tudo ou parte) de um produto especifico:  
+
     (patch) localhost:3000/product/{id}
     body: {
         "title": "Produto6", // optional
@@ -71,4 +76,5 @@ Alterar (tudo ou parte) de um produto especifico:
     }
 
 Deletar um produto especifico:
+
     (delete) localhost:3000/product/{id}
