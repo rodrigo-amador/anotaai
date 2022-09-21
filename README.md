@@ -6,6 +6,7 @@ Instala todos os packages:
 
 Verificar os dados para conexão do banco no arquivo .env:
     
+    * Nome do banco está como anota_ai, mas pode ser alterado no .env ou em ./src/config/dbConfig.js campo database (o bd precisa ser criado para que as tabelas sejam criadas automaticamente pelas models: CREATE SCHEMA `anota_ai` ;)
     * Os dados para conectar ao banco estão no arquivo .env, com o 'user'='root', 'senha'='', e a 'porta'=3306, apontando para o localhost, caso algum dos dados padrões seja diferente atualizar o .env (ou se preferir alterar o arquivo src/config/dbConfig.js)
 
 Rodar o server:
