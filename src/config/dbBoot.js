@@ -25,6 +25,7 @@ class Database {
       })
     } catch (error) {
       logger.error(`[${new Date()}] [Database.init] -> Error when connecting to DB: ${error.message}`)
+      console.log(`Error while starting Database, db call won't work: ${error.message}`)
     }
   }
 }
